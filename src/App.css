@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* @media(max-width:998px) {
+}
+
+@media(max-width:768px) {
+} */
+
+
+li {
+    list-style: none;
+}

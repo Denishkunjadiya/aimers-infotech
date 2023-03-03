@@ -1,0 +1,188 @@
+.contact_img {
+    height: 60vh;
+    background: url('../img/contact\ us.jpg');
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact_img div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact_img h1 {
+    color: #171810;
+    font-size: 4em;
+    border-bottom: 2px solid #333;
+    font-family: century;
+}
+
+.contact_img h2 {
+    text-align: left;
+    color: brown;
+    width: 50%;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+/* --------------------card .contact_form */
+.contact_info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.c_card {
+    margin: 2em;
+    padding: 1em;
+    text-align: center;
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid #05e465;
+    transition: .5s;
+}
+
+.c_card:hover {
+    box-shadow: 0 0 10px 2px #05e466a1;
+}
+
+.c_card_top i {
+    font-size: 2em;
+}
+
+
+.c_card_top {
+    border-bottom: 2px solid #05e465;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.c_card h1 {
+    text-transform: capitalize;
+    /* border-top: 2px solid #05e465; */
+}
+
+
+.c_card p {
+    margin-top: 1em;
+}
+
+/* -----------contact_form */
+.contact_c {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form {
+    margin: 20px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px #171810;
+    overflow: hidden;
+    padding: 20px;
+    background: url('f:\photos\Images\texture\gray_floor_texture-wallpaper-1920x1080.jpg');
+    width: 50%;
+    color: #05e465;
+}
+
+.contact_left {
+    width: 50%;
+    border-right: 2px double #05e465;
+    padding: 20px;
+}
+
+.contact_left h2 {
+    font-size: 4em;
+
+}
+
+.contact_right {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact_right input,
+.contact_right textarea {
+    padding: 15px 20px;
+    background: transparent;
+    border: 0;
+    color: aqua;
+    border-bottom: 2px solid #9b9b9b;
+    transition: .5s;
+    outline: none;
+    width: 90%;
+}
+
+.contact_right input:focus,
+.contact_right textarea:focus {
+    border-bottom-color: #05e465;
+}
+
+.contact_right textarea {
+    resize: none;
+}
+
+.contact_right button {
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    color: #05e465;
+    border: 2px solid #9b9b9b;
+    transition: .5s;
+}
+
+.contact_right button:hover,
+.contact_right button:focus {
+    outline: none;
+    box-shadow: inset 5em 0 0 0 #05e465;
+    color: #000;
+    border-color: #000;
+}
+
+
+/* =============================responsiv========= */
+
+
+@media(max-width:998px) {
+
+
+    /* ---------card */
+    .contact_card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .c_card {
+        width: 50%;
+    }
+
+    /* ********** */
+
+    .contact_form {
+        flex-direction: column;
+    }
+
+    .contact_left {
+        width: 90%;
+        border-bottom: 2px double #05e465;
+        border-right: 0;
+    }
+
+    .contact_right {
+        width: 90%;
+    }
+}

@@ -1,0 +1,168 @@
+.portfolio_card_c {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.p_title {
+    text-align: center;
+    margin: 1em 0px;
+}
+
+
+.portfolio_card_c hr {
+    width: 10px;
+}
+
+.portfolio_card {
+    margin: 10px;
+    padding: 10px;
+    background: #333;
+    width: 30%;
+}
+
+.portfolio_card_img {
+    height: 15em;
+    overflow: hidden;
+}
+
+.portfolio_card_img img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio_card_details {
+    color: #eee;
+
+}
+
+.portfolio_card_details p {
+    text-indent: 1cm;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.portfolio_card_details p::first-letter {
+    font-size: 1.7em;
+    color: var(--logo-green);
+    text-transform: capitalize;
+    margin-right: 2px;
+    font-weight: bolder;
+}
+
+.portfolio_card_details h1 {
+    margin: 5px auto;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.portfolio_card_details_btn {
+    display: flex;
+    margin-top: 10px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.portfolio_card_details_btn_right h1 {
+    background: #007f7f;
+    padding: 0px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.portfolio_card_details_btn_right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media(max-width:1200px) {
+    .portfolio_card_c {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+
+}
+
+@media(max-width:872px) {
+    .portfolio_card {
+        width: 70%;
+    }
+}
+
+/* ------------------p_single */
+
+.p_single_title {
+    text-align: center;
+    margin: 10px auto;
+    text-transform: capitalize;
+}
+
+.p_single_c {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.p_single_left {
+    margin: 10px;
+}
+
+.p_single_left img {
+    width: 40em;
+}
+
+.p_single_right {
+    margin: 10px;
+}
+
+.p_single_right h1 {
+    margin-bottom: .5em;
+    text-transform: capitalize;
+}
+
+.p_single_right h3 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.p_single_right p {
+    font-size: 1.5em;
+    text-indent: 1cm;
+    text-align: justify;
+
+}
+
+.p_single_right p::first-letter {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'georgia pro';
+}
+
+.p_single_gallary {
+    box-shadow: 0 0 10px 2px #efefef;
+    margin: 20px 50px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p_single_gallary img {
+    height: 10em;
+    margin: auto;
+    padding: 10px;
+}
+
+.p_single_right p {
+    margin-top: 5px;
+}

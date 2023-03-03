@@ -1,0 +1,134 @@
+/* -------------load */
+
+/* .pre_loding {
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    background: #171810;
+    color: #05e465;
+    position: absolute;
+    font-family: 'Ink Free';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loding {
+    border-radius: 50%;
+    border-left: 2px solid #05e465;
+    height: 3em;
+    width: 3em;
+    animation: infinite linear 1s loder;
+    margin: 20px;
+    transition: 1s;
+}
+
+@keyframes loder {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.pre_loding img {
+    height: 5em;
+    transform: rotate3d(50deg);
+    transform-style: preserve-3d;
+} */
+
+
+/* -----------3 ring */
+.loding_compo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #171810;
+}
+
+.loding {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ring {
+    width: 300px;
+    height: 300px;
+    border: 0px solid var(--logo-black);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ring:nth-child(1) {
+    border-bottom-width: 8px;
+    border-color: var(--logo-green);
+    animation: loder 1.5s linear infinite;
+}
+
+
+@keyframes loder {
+    0% {
+        transform: rotatex(35deg) rotateY(-45deg) rotateZ(0deg);
+        /* box-shadow: 0 10px 10px 2px var(--logo-green); */
+    }
+
+    100% {
+        transform: rotatex(35deg) rotateY(-45deg) rotateZ(360deg);
+        /* box-shadow: 0 10px 10px 2px var(--logo-green); */
+    }
+}
+
+.ring:nth-child(2) {
+    border-right-width: 8px;
+    border-color: var(--loder2);
+    animation: loder2 1.5s linear infinite;
+}
+
+@keyframes loder2 {
+    0% {
+        transform: rotatex(50deg) rotateY(10deg) rotateZ(0deg);
+        /* box-shadow: 0 10px 10px 2px var(--loder2); */
+    }
+
+    100% {
+        transform: rotatex(50deg) rotateY(10deg) rotateZ(360deg);
+        /* box-shadow: 0 10px 10px 2px var(--loder2); */
+    }
+}
+
+.ring:nth-child(3) {
+    border-top-width: 8px;
+    border-color: var(--loder3);
+    animation: loder3 1.5s linear infinite;
+}
+
+@keyframes loder3 {
+    0% {
+        transform: rotatex(35deg) rotateY(55deg) rotateZ(0deg);
+        /* box-shadow: 0 10px 10px 2px var(--loder3); */
+    }
+
+    100% {
+        transform: rotatex(35deg) rotateY(55deg) rotateZ(360deg);
+        /* box-shadow: 0 10px 10px 2px var(--loder3); */
+    }
+}
+
+.loding span {
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loding img {
+    height: 8em;
+    position: unset;
+}

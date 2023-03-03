@@ -1,0 +1,247 @@
+.about_img {
+    height: 30em;
+    background: url('../img/About\ us.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    border-radius: 20px;
+    border: 5px solid #171810;
+}
+
+.about_info {
+    /* background: #333; */
+
+    margin: 20px;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.about_info_left {
+    width: 50%;
+    /* background: url('../img/About\ group.png'); */
+}
+
+.about_info_left img {
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.about_info_right {
+    width: 50%;
+    display: flex;
+    box-shadow: 0 0 10px 5px #efefef;
+    padding: 20px 30px;
+    border-radius: 20px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.about_info_right h1 {
+    margin-bottom: .4em;
+    color: #323232;
+    border-bottom: 2px solid #777;
+    padding-bottom: 10px;
+}
+
+.about_info_right h3 {
+    color: ;
+}
+
+.about_info_right p {
+    text-align: justify;
+    color: #777;
+}
+
+/* --our_ex */
+
+.our_expertise {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.our_expertise h1 {
+    padding-bottom: .5em;
+}
+
+.our_expertise hr {
+    animation: our_expertise_hr 1s infinite alternate;
+}
+
+@keyframes our_expertise_hr {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.expertise_card_c {
+    justify-content: center;
+    display: flex;
+}
+
+.expertise_card {
+    padding: 2em;
+    margin: 1em;
+    box-shadow: 0 0 10px 2px #efefef;
+}
+
+.expertise_card i {
+    font-size: 5em;
+}
+
+.fa-react {
+    color: #61dbfb;
+}
+
+.fa-angular {
+    color: #b72833;
+}
+
+.fa-laravel {
+    color: #b72833;
+}
+
+.fa-magento {
+    color: #ef5a27;
+}
+
+.fa-android {
+    color: #71b754;
+}
+
+/* our team */
+.o_team {
+    margin-top: 50px;
+}
+
+.o_team h1 {
+    text-align: center;
+    padding-bottom: .5em;
+    text-transform: capitalize;
+}
+
+.o_team hr {
+    animation: our_expertise_hr 1s infinite alternate;
+    margin: 0 auto;
+}
+
+
+.leader {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.leader_details h2 {
+    font-size: 2em;
+    margin-bottom: .3em;
+}
+
+.leader_card {
+    display: flex;
+    margin: 1em;
+    padding: .5em;
+    width: 50%;
+    box-shadow: 0 0 10px 2px #efefef;
+    border: 2px solid #efefef;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.o_team .leader_card img {
+    height: 10em;
+    /* border: 2px solid #05e465; */
+}
+
+.leader_details {
+    width: 80%;
+    border-left: 2px solid #05e465;
+    padding-left: 20px;
+}
+
+/* --employess */
+
+.employess_card_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.employess_card {
+    margin: 20px;
+    box-shadow: 0 0 10px 2px #efefef;
+    border: 2px solid #efefef;
+    padding: 10px 20px;
+    width: 25%;
+    display: flex;
+    border-radius: 20px;
+}
+
+.employess_card img {
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+    background-position: center;
+    object-fit: cover;
+}
+
+
+.employess_card .employess_details {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 80%;
+}
+
+.employess_card .employess_details h1 {
+    text-transform: capitalize;
+    text-align: left;
+    color: #777;
+}
+
+.employess_card .employess_details p {
+    font-size: 1.3em;
+}
+
+@media(max-width:1144px) {
+    .expertise_card_c {
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+
+    .our_expertise {
+        width: 100%;
+    }
+
+    /* ====== */
+
+    .leader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employess_card_c {
+        flex-direction: column;
+    }
+
+    .employess_card {
+        width: 60%;
+    }
+}

@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background: #171810;
+
+}
+
+.logo img {
+    height: 90px;
+
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    color: #05e465;
+}
