@@ -1,0 +1,136 @@
+.nav_container_left {
+    background: #171810;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    /* height: 100%; */
+    width: auto;
+    text-align: center;
+    box-shadow: 0 0 15px 2px rgb(154, 154, 154);
+    color: #fff;
+}
+
+.nav_container_left li {
+    list-style: none;
+}
+
+.nav_container_left a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_container_left img {
+    width: 7em;
+    margin-top: 1em;
+    /* border-bottom: 2px solid #05e465; */
+}
+
+.nav_title {
+    font-family: 'Ink Free';
+    margin-bottom: 1em;
+}
+
+
+.nav_menu li {
+    margin: 1em auto;
+    border-bottom: 1px solid #05e465;
+    padding-bottom: 1em;
+    text-align: left;
+    transition: .5s;
+}
+
+.nav_menu li:hover,
+.nav_menu li:focus {
+    border-bottom: 4px solid aqua;
+}
+
+
+.nav_menu a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_menu details {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.nav_menu summary {
+    outline: none;
+}
+
+.nav_menu p {
+    margin-top: .5em;
+    width: 80%;
+    border-top: 1px solid #9b9b9b;
+    padding-top: .5em;
+}
+
+
+/* -------top */
+
+.nav_top {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto 1em auto;
+    /* text-align: right; */
+    display: flex;
+    justify-content: right;
+    box-shadow: 0 0 15px 1px #dedede;
+
+}
+
+.nav_top li {
+    list-style: none;
+}
+
+.mainMenu {
+    cursor: pointer;
+    text-align: right;
+    width: auto;
+    padding: 0 .5em;
+}
+
+.mainMenu span {
+    margin: 0 20px;
+    text-transform: capitalize;
+}
+
+.mainMenu i {
+    margin-left: .5em;
+    padding-bottom: .4em;
+}
+
+.mainMenu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.mainMenu li:hover .subMenu {
+    display: block;
+    max-height: 200px;
+}
+
+
+.subMenu {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-out;
+}
+
+.subMenu li i {
+    padding: 0;
+}
+
+.subMenu li {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.fa-power-off {
+    color: rgb(255, 0, 0);
+    font-size: 19px;
+}

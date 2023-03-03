@@ -1,0 +1,39 @@
+.login_form {
+    width: auto;
+    text-align: center;
+}
+
+.login_form input {
+    margin-top: 1em;
+    padding: 5px;
+    width: 30%;
+    border: 0;
+    border-bottom: 2px solid #00d5ff;
+    outline: none;
+    transition: .5s;
+    font-size: 1em;
+}
+
+.login_form input:hover,
+.login_form input:focus {
+    border-bottom: 2px solid #05e465;
+}
+
+.login_form button {
+    margin-top: 1em;
+    padding: .4em 1em;
+    font-family: 'bahnschrift';
+    background: transparent;
+    transition: .4s;
+    font-size: 1em;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login_form button:hover,
+.login_form button:focus {
+    outline: none;
+    letter-spacing: 3px;
+    box-shadow: inset 10em 0 0 0 #05e465;
+}
