@@ -17,7 +17,6 @@ const Contact = () => {
             }
         });
         result = await result.json()
-        console.log(result)
     }
 
     return (

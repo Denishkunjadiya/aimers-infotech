@@ -9,8 +9,7 @@ const Portfolio_singl = () => {
     const getPortfolio = async (id) => {
         let result = await fetch(`http://localhost:5000/portfolio/${params.id}`);
         result = await result.json();
-        console.warn(result)
-        setPortfolio(result)
+        setPortfolio(result )
     }
 
     useEffect(() => {
