@@ -31,7 +31,6 @@ const UpdateVacancy = () => {
 
 
         result = await result.json()
-        console.warn(result)
         if (result) {
             navigate('/vacancy');
         }

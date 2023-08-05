@@ -25,7 +25,6 @@ const AddVacancy = () => {
             }
         });
         result = await result.json()
-        console.warn(result)
     }
 
 

@@ -29,7 +29,6 @@ const Register = () => {
             }
         });
         result = await result.json()
-        console.log(result)
     }
 
     return (
