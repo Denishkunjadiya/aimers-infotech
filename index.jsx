@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors')
 const app = express();
-require('./db/config');
+// require('./db/config');
+const db = require('./db/config')
+
 const multer = require('multer');
 
 const { request, response } = require('express');
@@ -473,7 +475,13 @@ app.delete("/contact/:id", async (req, res) => {
 
 
 
-// ------------------
 
+// Connect to MongoDB
+const DATABASE_URL = 'mongodb+srv://denishkunjadiya:HQdE2X8z7qdrG5rX@cluster0.o1s7rud.mongodb.net/?retryWrites=true&w=majority'
+const DATABASE = 'db_aimars'
 
-app.listen(5000)
+db(DATABASE_URL, DATABASE);
+
+app.listen(5000, () => {
+    console.log(`listening on http://127.0.0.1:${5000}`)
+});
