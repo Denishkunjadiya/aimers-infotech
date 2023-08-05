@@ -8,7 +8,7 @@ const Footer = () => {
     const [Vacancy, setVacancy] = useState([]);
 
     const getCountVacancy = async () => {
-        let result = await fetch("http://localhost:5000/vacancyCount")
+        let result = await fetch("https://aimers-backend.onrender.com/vacancyCount")
         result = await result.json();
         setVacancy(result)
     }

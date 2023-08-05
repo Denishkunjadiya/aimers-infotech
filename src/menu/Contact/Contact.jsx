@@ -9,7 +9,7 @@ const Contact = () => {
     const [msg, setMsg] = useState("");
 
     const submitContact = async () => {
-        let result = await fetch('http://localhost:5000/contact', {
+        let result = await fetch('https://aimers-backend.onrender.com/contact', {
             method: 'post',
             body: JSON.stringify({ name, e_mail, mobile_no, msg }),
             headers: {

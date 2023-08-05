@@ -6,7 +6,7 @@ const About = () => {
     const [employes, setEmployes] = useState([]);
 
     const getEmployes = async () => {
-        let result = await fetch('http://localhost:5000/employe');
+        let result = await fetch('https://aimers-backend.onrender.com/employe');
         result = await result.json();
         setEmployes(result);
     }

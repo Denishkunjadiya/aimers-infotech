@@ -8,7 +8,7 @@ const Vacancy = () => {
     const [vacancy, setVacancy] = useState([]);
 
     const getVacancy = async () => {
-        let result = await fetch('http://localhost:5000/vacancy');
+        let result = await fetch('https://aimers-backend.onrender.com/vacancy');
         result = await result.json();
         setVacancy(result);
     }

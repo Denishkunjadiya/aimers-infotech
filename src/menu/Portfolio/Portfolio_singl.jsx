@@ -7,9 +7,9 @@ const Portfolio_singl = () => {
     const params = useParams();
 
     const getPortfolio = async (id) => {
-        let result = await fetch(`http://localhost:5000/portfolio/${params.id}`);
+        let result = await fetch(`https://aimers-backend.onrender.com/portfolio/${params.id}`);
         result = await result.json();
-        setPortfolio(result )
+        setPortfolio(result)
     }
 
     useEffect(() => {

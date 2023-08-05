@@ -7,7 +7,7 @@ const Home = () => {
     const [Client, setClient] = useState([]);
 
     const getClient = async () => {
-        let result = await fetch("http://localhost:5000/client")
+        let result = await fetch("https://aimers-backend.onrender.com/client")
         result = await result.json();
         setClient(result);
     }
@@ -21,20 +21,20 @@ const Home = () => {
     const [CountClient, setCountClient] = useState([]);
 
     const getCountEmploye = async () => {
-        let result = await fetch("http://localhost:5000/employeCount")
+        let result = await fetch("https://aimers-backend.onrender.com/employeCount")
         result = await result.json();
         setEmploye(result)
     }
 
 
     const getCountProject = async () => {
-        let result = await fetch("http://localhost:5000/portfolioCount")
+        let result = await fetch("https://aimers-backend.onrender.com/portfolioCount")
         result = await result.json();
         setProject(result)
     }
 
     const getCountClient = async () => {
-        let result = await fetch("http://localhost:5000/clientCount")
+        let result = await fetch("https://aimers-backend.onrender.com/clientCount")
         result = await result.json();
         setCountClient(result)
     }
