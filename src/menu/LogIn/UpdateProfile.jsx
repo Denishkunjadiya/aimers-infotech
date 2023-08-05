@@ -21,7 +21,7 @@ const UpdateProfile = () => {
             return false;
         }
 
-        let result = await fetch(`http://localhost:5000/user/${parms.id}`, {
+        let result = await fetch(`https://aimers-backend.onrender.com/user/${parms.id}`, {
             method: "Put",
             body: JSON.stringify({ name, password }),
             headers: {
@@ -42,7 +42,7 @@ const UpdateProfile = () => {
     }, []);
 
     const getUserDetails = async () => {
-        let result = await fetch(`http://localhost:5000/user/${parms.id}`);
+        let result = await fetch(`https://aimers-backend.onrender.com/user/${parms.id}`);
         result = await result.json();
         setName(result.name);
         setPassword(result.password);

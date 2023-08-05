@@ -26,7 +26,7 @@ const AddEmployess = () => {
         formData.append('image', image);
 
         navigate('/employess')
-        fetch('http://localhost:5000/addEmploye', {
+        fetch('https://aimers-backend.onrender.com/addEmploye', {
             method: 'post',
             body: formData
         })

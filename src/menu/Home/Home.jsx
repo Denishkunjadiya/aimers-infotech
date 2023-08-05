@@ -11,31 +11,31 @@ const Home = () => {
     const [Vacancy, setVacancy] = useState([]);
 
     const getCountEmploye = async () => {
-        let result = await fetch("http://localhost:5000/employeCount")
+        let result = await fetch("https://aimers-backend.onrender.com/employeCount")
         result = await result.json();
         setEmploye(result)
     }
 
     const getCountContact = async () => {
-        let result = await fetch("http://localhost:5000/contactCount")
+        let result = await fetch("https://aimers-backend.onrender.com/contactCount")
         result = await result.json();
         setContact(result)
     }
 
     const getCountProject = async () => {
-        let result = await fetch("http://localhost:5000/portfolioCount")
+        let result = await fetch("https://aimers-backend.onrender.com/portfolioCount")
         result = await result.json();
         setProject(result)
     }
 
     const getCountClient = async () => {
-        let result = await fetch("http://localhost:5000/clientCount")
+        let result = await fetch("https://aimers-backend.onrender.com/clientCount")
         result = await result.json();
         setClient(result)
     }
 
     const getCountVacancy = async () => {
-        let result = await fetch("http://localhost:5000/vacancyCount")
+        let result = await fetch("https://aimers-backend.onrender.com/vacancyCount")
         result = await result.json();
         setVacancy(result)
     }

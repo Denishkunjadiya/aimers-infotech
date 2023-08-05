@@ -10,7 +10,7 @@ const Profile = () => {
     const [User, setUser] = useState([]);
 
     const getUser = async () => {
-        let result = await fetch('http://localhost:5000/user');
+        let result = await fetch('https://aimers-backend.onrender.com/user');
         result = await result.json();
         setUser(result);
     }
@@ -21,7 +21,7 @@ const Profile = () => {
     // --delete
 
     const removeUser = async (id) => {
-        let result = await fetch(`http://localhost:5000/user/${id}`, {
+        let result = await fetch(`https://aimers-backend.onrender.com/user/${id}`, {
             method: "Delete"
         });
         result = await result.json();

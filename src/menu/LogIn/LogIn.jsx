@@ -10,7 +10,7 @@ const LogIn = () => {
 
     const onLogIn = async () => {
 
-        let result = await fetch('http://localhost:5000/logIn', {
+        let result = await fetch('https://aimers-backend.onrender.com/logIn', {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {

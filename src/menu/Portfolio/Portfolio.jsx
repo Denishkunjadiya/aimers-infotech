@@ -7,7 +7,7 @@ const Portfolio = () => {
     const [portfolio, setPortfolio] = useState([]);
 
     const getPortfolio = async () => {
-        let result = await fetch('http://localhost:5000/portfolio');
+        let result = await fetch('https://aimers-backend.onrender.com/portfolio');
         result = await result.json();
         setPortfolio(result);
     }
@@ -18,7 +18,7 @@ const Portfolio = () => {
     // --delete
 
     const deleteProject = async (id) => {
-        let result = await fetch(`http://localhost:5000/portfolio/${id}`, {
+        let result = await fetch(`https://aimers-backend.onrender.com/portfolio/${id}`, {
             method: "Delete"
         });
         result = await result.json();

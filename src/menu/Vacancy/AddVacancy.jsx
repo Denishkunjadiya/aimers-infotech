@@ -17,7 +17,7 @@ const AddVacancy = () => {
             return false;
         }
 
-        let result = await fetch("http://localhost:5000/addVacancy", {
+        let result = await fetch("https://aimers-backend.onrender.com/addVacancy", {
             method: 'post',
             body: JSON.stringify({ requirement, lang }),
             headers: {

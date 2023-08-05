@@ -21,7 +21,7 @@ const UpdateVacancy = () => {
             return false;
         }
 
-        let result = await fetch(`http://localhost:5000/vacancy/${parms.id}`, {
+        let result = await fetch(`https://aimers-backend.onrender.com/vacancy/${parms.id}`, {
             method: "Put",
             body: JSON.stringify({ requirement, lang }),
             headers: {
@@ -37,7 +37,7 @@ const UpdateVacancy = () => {
     }
 
     const getVacancyDetails = async () => {
-        let result = await fetch(`http://localhost:5000/vacancy/${parms.id}`);
+        let result = await fetch(`https://aimers-backend.onrender.com/vacancy/${parms.id}`);
         result = await result.json();
         setRequirement(result.requirement);
         setLang(result.lang)

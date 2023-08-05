@@ -9,7 +9,7 @@ const Client = () => {
 
 
     const getClient = async () => {
-        let result = await fetch("http://localhost:5000/client")
+        let result = await fetch("https://aimers-backend.onrender.com/client")
         result = await result.json();
         setClient(result);
     }
@@ -19,7 +19,7 @@ const Client = () => {
     // --delete
 
     const deleteClient = async (id) => {
-        let result = await fetch(`http://localhost:5000/client/${id}`, {
+        let result = await fetch(`https://aimers-backend.onrender.com/client/${id}`, {
             method: "Delete"
         });
         result = await result.json();

@@ -7,7 +7,7 @@ const Contact = () => {
 
 
     const getContact = async () => {
-        let result = await fetch("http://localhost:5000/contact")
+        let result = await fetch("https://aimers-backend.onrender.com/contact")
         result = await result.json();
         setContact(result);
     }
@@ -18,7 +18,7 @@ const Contact = () => {
     // --delete
 
     const deleteContact = async (id) => {
-        let result = await fetch(`http://localhost:5000/contact/${id}`, {
+        let result = await fetch(`https://aimers-backend.onrender.com/contact/${id}`, {
             method: "Delete"
         });
         result = await result.json();

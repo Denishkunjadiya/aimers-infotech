@@ -34,7 +34,7 @@ const AddPortfolio = () => {
     formData.append('LDetail', l_detail)
 
 
-    fetch("http://localhost:5000/addProject", {
+    fetch("https://aimers-backend.onrender.com/addProject", {
       method: 'post',
       body: formData
     })

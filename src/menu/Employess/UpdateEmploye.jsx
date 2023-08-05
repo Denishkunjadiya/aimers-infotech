@@ -26,7 +26,7 @@ const UpdateEmploye = () => {
         formData.append('ability', ability);
         formData.append('image', image);
 
-        fetch(`http://localhost:5000/employe/${parms.id}`, {
+        fetch(`https://aimers-backend.onrender.com/employe/${parms.id}`, {
             method: "Put",
             body: formData
         })
@@ -40,7 +40,7 @@ const UpdateEmploye = () => {
     }, []);
 
     const getEmployeDetails = async () => {
-        let result = await fetch(`http://localhost:5000/employe/${parms.id}`);
+        let result = await fetch(`https://aimers-backend.onrender.com/employe/${parms.id}`);
         result = await result.json();
         setName(result.name);
         setability(result.ability);

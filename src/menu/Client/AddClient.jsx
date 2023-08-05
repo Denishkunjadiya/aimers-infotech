@@ -24,7 +24,7 @@ const AddClient = () => {
         formData.append('image', file);
         formData.append('name', name);
 
-        fetch("http://localhost:5000/addClient", {
+        fetch("https://aimers-backend.onrender.com/addClient", {
             method: 'POST',
             body: formData
         })

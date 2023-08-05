@@ -26,7 +26,7 @@ const UpdateClient = () => {
         formData.append('image', image);
         formData.append('name', name);
 
-        fetch(`http://localhost:5000/client/${parms.id}`, {
+        fetch(`https://aimers-backend.onrender.com/client/${parms.id}`, {
             method: "Put",
             body: formData
         })
@@ -42,7 +42,7 @@ const UpdateClient = () => {
     }, []);
 
     const getClientDetails = async () => {
-        let result = await fetch(`http://localhost:5000/client/${parms.id}`);
+        let result = await fetch(`https://aimers-backend.onrender.com/client/${parms.id}`);
         result = await result.json();
         setName(result.name);
 

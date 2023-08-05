@@ -34,7 +34,7 @@ const UpdatePortfolio = () => {
     formData.append('SDetail', s_detail)
     formData.append('LDetail', l_detail)
 
-    fetch(`http://localhost:5000/portfolio/${parms.id}`, {
+    fetch(`https://aimers-backend.onrender.com/portfolio/${parms.id}`, {
       method: "Put",
       body: formData
     })
@@ -45,7 +45,7 @@ const UpdatePortfolio = () => {
   }
 
   const getPortfolioDetails = async () => {
-    let result = await fetch(`http://localhost:5000/portfolio/${parms.id}`);
+    let result = await fetch(`https://aimers-backend.onrender.com/portfolio/${parms.id}`);
     result = await result.json();
     setName(result.p_name);
     setType(result.p_type)

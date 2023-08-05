@@ -21,7 +21,7 @@ const Register = () => {
             return false;
         }
 
-        let result = await fetch('http://localhost:5000/register', {
+        let result = await fetch('https://aimers-backend.onrender.com/register', {
             method: 'post',
             body: JSON.stringify({ name, password, email }),
             headers: {

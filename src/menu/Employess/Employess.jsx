@@ -8,7 +8,7 @@ const Employess = () => {
     const [employes, setEmployes] = useState([]);
 
     const getEmployes = async () => {
-        let result = await fetch('http://localhost:5000/employe');
+        let result = await fetch('https://aimers-backend.onrender.com/employe');
         result = await result.json();
         setEmployes(result);
     }
@@ -18,7 +18,7 @@ const Employess = () => {
     // --delete
 
     const deleteProduct = async (id) => {
-        let result = await fetch(`http://localhost:5000/employe/${id}`, {
+        let result = await fetch(`https://aimers-backend.onrender.com/employe/${id}`, {
             method: "Delete"
         });
         result = await result.json();
